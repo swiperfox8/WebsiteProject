@@ -6,12 +6,13 @@ def main():
   insults()
 
 def insults():
-  mean = ["You're a slimeball", "Worthless scum", "bah, humbug", "Go make yourself useful peasant", "Tell me some jokes, that's all you're good for anyway"]
+  mean = ["Thy wit is as dull as a rusted blade", "Even the RATS in the dungeon make more melodious tunes than thee!",
+          "Thine music sounds like garbage in me ears", "Thy crackly voice grates upon mine ears and brings blood", "Thine face makes me nausea down in me toes"]
   print("\n")
   print(random.choice(mean))
   print("* * * * * *")
-  print("Reload this site to learn more about how useless you are...")
-  print("Pity. You disgrace me")
+  print("Reload this site to learn more about how useless thou art...")
+  print("Pity. Thou disgrace me and bring shame upon thee family")
   
 
 main()
