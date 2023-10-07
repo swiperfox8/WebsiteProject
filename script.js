@@ -8,10 +8,18 @@ let D6Faces = [
   "D6R6.svg",
 ];
 
-
 // Function that animates and calculates D6 rolls
 function rollD6() {
+  const D6Button = document.getElementById("D6Button");
+  const isD6Disabled = D6Button.disabled;
+
+  if (!isD6Disabled) {
+    D6Button.disabled = true;
+  }
+
+  D6Button.classList.add("fade-out");
   D6.classList.add("shake");
+
   setTimeout(function () {
     D6.classList.remove("shake");
     let D6Value = Math.floor(Math.random() * 6);

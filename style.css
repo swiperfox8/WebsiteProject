@@ -71,7 +71,7 @@ h2 {
   border: 1px solid black;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 45%;
   left: 50%;
   background-color: white;
   box-shadow: 0 15px 35px rgba(50, 50, 50, 0.2);
@@ -90,6 +90,8 @@ h2 {
 
 .D6ButtonContainer {
   text-align: center;
+  position: relative;
+  top: 350px;
 }
 
 .D6Wrapper {
@@ -142,6 +144,11 @@ h2 {
 .pycode {
   text-align: center;
   font-size: 15px;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 /*Fading in effect of the text for mad libs*/
