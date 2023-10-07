@@ -27,9 +27,46 @@ function rollD6() {
   }, 1000);
 }
 
-// Tracks clicks of the D6 rolling button and calls rollD6()
-const rollButton = document.querySelector("#D6Button");
-rollButton.addEventListener("click", rollD6);
+let D20Faces = [
+  "D20R01.png",
+  "D20R02.png",
+  "D20R03.png",
+  "D20R04.png",
+  "D20R05.png",
+  "D20R06.png",
+  "D20R07.png",
+  "D20R08.png",
+  "D20R09.png",
+  "D20R10.png",
+  "D20R11.png",
+  "D20R12.png",
+  "D20R13.png",
+  "D20R14.png",
+  "D20R15.png",
+  "D20R16.png",
+  "D20R17.png",
+  "D20R18.png",
+  "D20R19.png",
+  "D20R20.png",
+];
+
+function rollD20() {
+  const D20Button = document.getElementById("D20Button");
+  const isD20Disabled = D20Button.disabled;
+
+  if (!isD20Disabled) {
+    D20Button.disabled = true;
+  }
+
+  D20Button.classList.add("fade-out");
+  D20.classList.add("shake");
+
+  setTimeout(function () {
+    D20.classList.remove("shake");
+    let D20Value = Math.floor(Math.random() * 20);
+    document.querySelector("#D20").setAttribute("src", D20Faces[D20Value]);
+  }, 1000);
+}
 
 // Function to navigate to Mad Lib Answers
 function navigateToAnswers() {
