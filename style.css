@@ -65,6 +65,23 @@ h2 {
   transition: opacity 0.3s ease-in-out;
 }
 
+.D20Container {
+  width: 400px;
+  padding: 50px;
+  border: 1px solid black;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 50%;
+  background-color: white;
+  box-shadow: 0 15px 35px rgba(50, 50, 50, 0.2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
 .D6Container {
   width: 400px;
   padding: 50px;
@@ -128,17 +145,17 @@ h2 {
   margin: 0 auto;
 }
 
-#showD20ResultButton {
-  display: block;
+#D20Button {
+  background-color: black;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 0;
+  width: 150px;
+  letter-spacing: 1px;
+  border-radius 5px;
+  align-items: center;
   margin: 0 auto;
-  background-color: black; 
-  color: white; 
-  font-size: 18px;
-}
-
-#D20Result {
-  display: flex;
-  flex-direction: column;
 }
 
 .pycode {
