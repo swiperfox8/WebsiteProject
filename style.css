@@ -1,10 +1,14 @@
-html {
-  background: rgb(71,62,60);
-  background: linear-gradient(201deg, rgba(71,62,60,1) 44%,      
-  rgba(126,104,99,1) 78%, rgba(182,172,170,1) 100%);
+html, body {
   color: white;
   height: 100%;
   width: 100%;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #473b3c 0%, #b6acaa 100%);
+  background-repeat: no repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 .topnav {
@@ -83,6 +87,14 @@ h2 {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  margin-top: 25px;
+}
+
+.D6Intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
 }
 
 .D6Container {
@@ -96,6 +108,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  margin-top: 25px;
 }
 
 .D6Container img {
@@ -140,7 +153,7 @@ h2 {
   letter-spacing: 1px;
   border-radius: 5px;
   align-items: center;
-  margin: 0 auto;
+  margin-top: 25px;
 }
 
 #D20Button {
@@ -153,7 +166,7 @@ h2 {
   letter-spacing: 1px;
   border-radius: 5px;
   align-items: center;
-  margin: 0 auto;
+  margin-top: 25px;
 }
 
 .pycode {
