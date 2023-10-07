@@ -88,6 +88,10 @@ h2 {
   display: block;
 }
 
+.D6ButtonContainer {
+  text-align: center;
+}
+
 .D6Wrapper {
   width: 90%;
   display: flex;
@@ -109,8 +113,8 @@ h2 {
   }
 }
 
-button {
-  background-color: #e92e3d;
+#D6Button {
+  background-color: black;
   border: none;
   outline: none;
   color: white;
@@ -118,12 +122,14 @@ button {
   width: 150px;
   letter-spacing: 1px;
   border-radius: 5px;
+  align-items: center;
+  margin: 0 auto;
 }
 
 #showD20ResultButton {
   display: block;
   margin: 0 auto;
-  background-color: #ff5733; 
+  background-color: black; 
   color: white; 
   font-size: 18px;
 }
