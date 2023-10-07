@@ -149,11 +149,18 @@ h2 {
   outline: none;
   color: white;
   padding: 15px 0;
+  cursor: pointer;
   width: 150px;
   letter-spacing: 1px;
   border-radius: 5px;
   align-items: center;
   margin-top: 25px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+#D6Button:hover {
+  background-color: white;
+  color: black;
 }
 
 #D20Button {
@@ -162,11 +169,18 @@ h2 {
   outline: none;
   color: white;
   padding: 15px 0;
+  cursor: pointer;
   width: 150px;
   letter-spacing: 1px;
   border-radius: 5px;
   align-items: center;
   margin-top: 25px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+#D20Button:hover {
+  background-color: white;
+  color: black;
 }
 
 .pycode {
