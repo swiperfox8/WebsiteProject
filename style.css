@@ -93,7 +93,7 @@ h2 {
   display: flex;
   justify-content: space-around;
 }
-/*
+
 .shake {
   animation: shake 0.5s infinite;
 }
@@ -107,7 +107,7 @@ h2 {
   100% {
     transform: rotate(8deg);
   }
-} */
+}
 
 button {
   background-color: #e92e3d;
