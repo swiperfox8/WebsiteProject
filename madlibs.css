@@ -2,6 +2,19 @@
     margin-top: 30px;
     flex: auto;
     margin-bottom: 0 auto; 
+    background-color: #DCC969;
+    color: brown; 
+    border: none; 
+    padding: 10px;
+}
+
+.submit:hover {
+    background-color:#A65168; 
+    color: white;
+}
+
+.submit:after {
+    display: none; 
 }
 
 .input {
@@ -13,6 +26,9 @@
 .form {
     margin-right: 20px;
     border: 1px solid #DCC969; 
+    background-color: #DCC969;
+    font-weight: bold; 
+    color: brown;
     padding: 10px;
     align-content: center;
     align-items: center;
