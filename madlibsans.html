@@ -6,7 +6,7 @@
   <a href="dice.html">Roll D20</a>
   <a href="chatbot.html">Bard Roaster</a>
   <a href="madlibs.html">Story Time</a>
-  <a class="active" href="madlibsans.html">Completed Story</a>
+  <a href="madlibsans.html"></a>
 </div>
   
 <head>
@@ -15,7 +15,24 @@
     <title>Roll D20</title>
     <link rel="icon" type="image/x-icon" href="BardPic.jpg">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
+    
+    @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
+
+      /* fade in effect for text*/
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+     }
+    }
+
+    .fade-in {
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
     </style>
 </head>
   
@@ -25,6 +42,15 @@
     <h2>Dark Dungeons: Destination</h2>
   </div>
 
+  <div class = "fade-in"> 
+    <!-- Enter the text from the story -->
+    
+
+
+
+
+
+  </div>
 
 </body>
 
