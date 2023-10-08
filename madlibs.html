@@ -10,6 +10,7 @@
 
 <head>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="madlibs.css" rel="stylesheet" type="text/css" />
   <script src="script.js"></script>
   <title>Roll D20</title>
   <style>
@@ -20,17 +21,112 @@
 <body>
 
   <div class="intro">
-    <h2>Dark Dungeons</h2>
+    <h2>A Bard in Action</h2>
   </div>
 
   <!-- Text for the Mad libs -->
   <div class="fade-in">
-    <p>Fade in text test</p>
+    <p>Let's spin a tale of thee and see what your future beholds. Can you espcape your fate or bring further ruin upon
+      your family's name?</p>
+    <p><em>Directions: If ye a smart lad then ye shall fill out the blanks with matching appropriate label.</em></p>
   </div>
 
-  <!-- <button class="submit"> Submit</button> -->
+  <div class="form">
+    <h2 class="form-title">Madlibs</h2>
+    <div class="column">
+      <label> Noun
+        <input class="input" id="one" type="text">
+      </label>
+      <br>
+
+      <label> State of Being
+        <input class="input" id="two" type="text">
+      </label>
+      <br>
+
+      <label> Prefix
+        <input class="input" id="three" type="text">
+      </label>
+      <br>
+
+      <label> Noun
+        <input class="input" id="four" type="text">
+      </label>
+      <br>
+
+      <label> Place
+        <input class="input" id="five" type="text">
+      </label>
+      <br>
+
+      <label> Name
+        <input class="input" id="six" type="text">
+      </label>
+      <br>
+    </div>
+
+    <div class="column">
+      <label> Adjective
+        <input class="input" id="seven" type="text">
+      </label>
+      <br>
+
+      <label> Day of Week
+        <input class="input" id="eight" type="text">
+      </label>
+      <br>
+
+      <label> Body of Water
+        <input class="input" id="nine" type="text">
+      </label>
+      <br>
+
+      <label> Adjective
+        <input class="input" id="ten" type="text">
+      </label>
+      <br>
+
+      <label> Adjective
+        <input class="input" id="eleven" type="text">
+      </label>
+      <br>
+
+      <label> Adjective ending in -ly
+        <input class="input" id="twelve" type="text">
+      </label>
+      <br>
+    </div>
+  </div>
+  <div id="story"></div>
+
+  <button onclick="generateStory()" class="submit">Continue on thee journey</button>
+
+  <script defer>
+    function generateStory() {
+      const one = document.getElementById('one').value;
+      const two = document.getElementById('two').value;
+      const three = document.getElementById('three').value;
+      const four = document.getElementById('four').value;
+      const five = document.getElementById('five').value;
+      const six = document.getElementById('six').value;
+      const seven = document.getElementById('seven').value;
+      const eight = document.getElementById('eight').value;
+      const nine = document.getElementById('nine').value;
+      const ten = document.getElementById('ten').value;
+      const eleven = document.getElementById('eleven').value;
+      const twelve = document.getElementById('twelve').value;
+
+      const story = `Hear ye! Hear ye! All ${one} who wander must be lost. But what was once lost must then be found even in the state of absolute ${two}. So, let me introduce you to the one and only ${three} ${four} of ${five} ! ${six}, this is the brotheren! Welcome...
+        Tis' the day of ${seven} ${eight}. You're on a stroll along the banks of the ${nine} and at once you see a ${ten} ship onboarding a mass of noble families. It's your chance and you know it. It's time to seize the day. But can a bard really do it? You approach the ${eleven} boatswain. ${twelve} working their way in disguise. "Ayo laddy, what brings you to tis part of our ol' town?`;
+
+      document.getElementById('story').innerText = story;
 
 
+      document.querySelector(".form").classList.add("hide")
+    }
+
+    console.log(story);
+  </script>
 
 </body>
 

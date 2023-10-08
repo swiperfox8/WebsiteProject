@@ -1,0 +1,38 @@
+.submit {
+    margin-top: 30px;
+    flex: auto;
+    margin-bottom: 0 auto; 
+}
+
+.input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.form {
+    margin-right: 20px;
+    border: 1px solid #DCC969; 
+    padding: 10px;
+    align-content: center;
+    align-items: center;
+}
+
+.form-title {
+    align-content: center; 
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  .form:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .hide {
+    display: none;
+  }
