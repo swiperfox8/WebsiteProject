@@ -35,74 +35,76 @@
     <h2 class="form-title">Madlibs</h2>
     <div class="column">
       <label> Noun
-        <input class="input" id="one" type="text">
+        <input class="input" id="one" type="text" required>
       </label>
       <br>
 
       <label> State of Being
-        <input class="input" id="two" type="text">
+        <input class="input" id="two" type="text" required>
       </label>
       <br>
 
       <label> Prefix
-        <input class="input" id="three" type="text">
+        <input class="input" id="three" type="text" required>
       </label>
       <br>
 
       <label> Noun
-        <input class="input" id="four" type="text">
+        <input class="input" id="four" type="text" required>
       </label>
       <br>
 
       <label> Place
-        <input class="input" id="five" type="text">
+        <input class="input" id="five" type="text" required>
       </label>
       <br>
 
       <label> Name
-        <input class="input" id="six" type="text">
+        <input class="input" id="six" type="text" required>
       </label>
       <br>
     </div>
 
     <div class="column">
       <label> Adjective
-        <input class="input" id="seven" type="text">
+        <input class="input" id="seven" type="text" required>
       </label>
       <br>
 
       <label> Day of Week
-        <input class="input" id="eight" type="text">
+        <input class="input" id="eight" type="text" required>
       </label>
       <br>
 
       <label> Body of Water
-        <input class="input" id="nine" type="text">
+        <input class="input" id="nine" type="text" required>
       </label>
       <br>
 
       <label> Adjective
-        <input class="input" id="ten" type="text">
+        <input class="input" id="ten" type="text" required>
       </label>
       <br>
 
       <label> Adjective
-        <input class="input" id="eleven" type="text">
+        <input class="input" id="eleven" type="text" required>
       </label>
       <br>
 
       <label> Adjective ending in -ly
-        <input class="input" id="twelve" type="text">
+        <input class="input" id="twelve" type="text" required>
       </label>
       <br>
     </div>
   </div>
   <div id="story"></div>
 
-  <button onclick="generateStory()" class="submit">Continue on thee journey</button>
+  <button type="button" onclick="generateStory()" class="submit">Continue on thee journey</button>
 
   <script defer>
     function generateStory() {
+      event.preventDefault();
+
       const one = document.getElementById('one').value;
       const two = document.getElementById('two').value;
       const three = document.getElementById('three').value;
@@ -122,7 +124,7 @@
       document.getElementById('story').innerText = story;
 
 
-      document.querySelector(".form").classList.add("hide")
+      document.querySelector(".form").classList.add("hide"); 
     }
 
     console.log(story);
