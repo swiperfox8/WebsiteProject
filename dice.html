@@ -20,7 +20,7 @@
 
     <div class="intro">
       <h2>The Dice</h2>
-      <p>Welcome to the beginning of your lucky streak!</p>
+      <p>Welcome to the beginning of your problems!</p>
       <p>
         Roll the twenty-sided die below to find out how long you'll have to wait
         for your food tonight.
@@ -34,6 +34,11 @@
       </div>
       <div class = "D20ButtonContainer">
         <button onclick="rollD20()" id="D20Button">Roll the D20</button>
+        <div id = "D20ButtonOutput"></div>
+      </div>
+      <div class = "D6Intro">
+        <p>Still feel like gambling?</p>
+        <p>Roll the normal die below to find out where you'll be enjoying your meal.</p>
       </div>
       <div class="D6Container">
         <div class="D6Wrapper">
@@ -42,6 +47,7 @@
       </div>
       <div class = "D6ButtonContainer">
         <button onclick="rollD6()" id="D6Button">Roll the D6</button>
+        <div id = "D6ButtonOutput"></div>
       </div>
     </div>
   </body>
