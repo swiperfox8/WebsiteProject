@@ -1,6 +1,7 @@
 .submit {
     margin-top: 30px;
     flex: auto;
+    margin-bottom: 0 auto; 
 }
 
 .input {
@@ -11,6 +12,14 @@
 
 .form {
     margin-right: 20px;
+    border: 1px solid #DCC969; 
+    padding: 10px;
+    align-content: center;
+    align-items: center;
+}
+
+.form-title {
+    align-content: center; 
 }
 
 .column {
