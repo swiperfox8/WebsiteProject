@@ -99,9 +99,15 @@
   </div>
   <div id="story"></div>
 
-  <button type="button" onclick="generateStory()" class="submit">Continue on thee journey</button>
+  <button type="button" onclick="generateStory(); hideButton();" class="submit">Continue on thee journey</button>
 
   <script defer>
+    function hideButton() {
+      var button = document.getElementById("submit");
+      button.style.display = "none"; 
+    }
+
+
     function generateStory() {
       event.preventDefault();
 
