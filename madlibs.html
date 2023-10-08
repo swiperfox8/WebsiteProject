@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="dice.html">Roll D20</a>
-  <a href="chatbot.html">Bard Roaster</a>
-  <a class="active" href="madlibs.html">Story Time</a>
-  <a href="game.html">Can you Match</a>
-</div>
-
 <head>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="madlibs.css" rel="stylesheet" type="text/css" />
@@ -21,6 +13,14 @@
 </head>
 
 <body>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="dice.html">Dice Roll</a>
+    <a href="chatbot.html">Dark Dungeons</a>
+    <a class="active" href="madlibs.html">Story Time</a>
+    <a href="game.html">Matching Madness</a>
+  </div>
 
   <div class="intro">
     <h2>A Bard in Action</h2>
@@ -65,9 +65,7 @@
         <input class="input" id="six" type="text" required>
       </label>
       <br>
-    </div>
 
-    <div class="column">
       <label> Adjective
         <input class="input" id="seven" type="text" required>
       </label>
@@ -97,6 +95,87 @@
         <input class="input" id="twelve" type="text" required>
       </label>
       <br>
+
+      <label> Noun
+        <input class="input" id="thirteen" type="text" required>
+      </label>
+      <br>
+
+    </div>
+
+    <div class="column">
+
+      <label> Adjective
+        <input class="input" id="fourteen" type="text" required>
+      </label>
+      <br>
+
+      <label> Name
+        <input class="input" id="fifteen" type="text" required>
+      </label>
+      <br>
+
+      <label> City
+        <input class="input" id="sixteen" type="text" required>
+      </label>
+      <br>
+
+      <label> Verbs
+        <input class="input" id="seventeen" type="text" required>
+      </label>
+      <br>
+
+      <label> A Red Object
+        <input class="input" id="eighteen" type="text" required>
+      </label>
+      <br>
+
+      <label> Verb
+        <input class="input" id="nineteen" type="text" required>
+      </label>
+      <br>
+
+      <label> Verb
+        <input class="input" id="twenty" type="text" required>
+      </label>
+      <br>
+
+
+      <label> Noun
+        <input class="input" id="twentyone" type="text" required>
+      </label>
+      <br>
+
+      <label> Name
+        <input class="input" id="twentytwo" type="text" required>
+      </label>
+      <br>
+
+      <label> Occupation
+        <input class="input" id="twentythree" type="text" required>
+      </label>
+      <br>
+
+      <label> Verb
+        <input class="input" id="twentyfour" type="text" required>
+      </label>
+      <br>
+
+      <label> Adjective
+        <input class="input" id="twentyfive" type="text" required>
+      </label>
+      <br>
+
+      <label> Name
+        <input class="input" id="twentysix" type="text" required>
+      </label>
+      <br>
+
+      <label> Verb in Past Tense
+        <input class="input" id="twentyseven" type="text" required>
+      </label>
+      <br>
+
     </div>
   </div>
   <div id="story"></div>
@@ -119,9 +198,27 @@
       const ten = document.getElementById('ten').value;
       const eleven = document.getElementById('eleven').value;
       const twelve = document.getElementById('twelve').value;
+      const thirteen = document.getElementById('thirteen').value;
+      
+      const fourteen = document.getElementById('fourteen').value;
+      const fifteen = document.getElementById('fifteen').value;
+      const sixteen = document.getElementById('sixteen').value;
+      const seventeen = document.getElementById('seventeen').value;
+      const eighteen = document.getElementById('eighteen').value;
+      const nineteen = document.getElementById('nineteen').value;
+      const twenty = document.getElementById('twenty').value;
+      const twentyone = document.getElementById('twentyone').value;
+      const twentytwo = document.getElementById('twentytwo').value;
+      const twentythree = document.getElementById('twentythree').value;
+      const twentyfour = document.getElementById('twentyfour').value;
+      const twentyfive = document.getElementById('twentyfive').value;
+      const twentysix = document.getElementById('twentysix').value;
+      const twentyseven = document.getElementById('twentyseven').value;
 
       const story = `Hear ye! Hear ye! All ${one} who wander must be lost. But what was once lost must then be found even in the state of absolute ${two}. So, let me introduce you to the one and only ${three} ${four} of ${five} ! ${six}, this is the brotheren! Welcome...
-        Tis' the day of ${seven} ${eight}. You're on a stroll along the banks of the ${nine} and at once you see a ${ten} ship onboarding a mass of noble families. It's your chance and you know it. It's time to seize the day. But can a bard really do it? You approach the ${eleven} boatswain. ${twelve} working their way in disguise. "Ayo laddy, what brings you to tis part of our ol' town?`;
+        Tis' the day of ${seven} ${eight}. You're on a stroll along the banks of the ${nine} and at once you see a ${ten} ship onboarding a mass of noble families. It's your chance and you know it. It's time to seize the day. But can a bard really do it? You approach the ${eleven} boatswain. ${twelve} working their way in disguise. "Ayo laddy, what brings you to tis part of our ol' town?
+        You attempt to convince the man that you were the assigned bard for one of the noble families, when you see a group of ${thirteen} entering the big ol' ship. The boatswain calls to some other crew members, who all try to capture you while you start running away.. A coward I say. How can you run? Then the ${fourteen} Duke ${fifteen} approaches you suddenly and you halt from fear.  “Play for me, you lowly bard” You begin singing the great tale of the Lord of ${sixteen} . The Duke starts ${seventeen} with anger and becomes as red as a ${eighteen}, whispers erupted. Ay, ye hear? Is all you heard from the mass gathered today. You then realize the Lord you so passionately praised was the very man who killed the Duke's grandfather in ${nineteen}. He demands the ship captain to capture you, (muttering) As he should. Bleh. Tie you to a rock  there laddy and drop both ya and the rock in the middle of the ocean, drowning in the mother of all- the ocean. Ya manage to break free ,  and sneak out  right under their noses are ya laddy? Ya crew ain't pay no attention either.  Lots of rude remarks and nasty looks as you ${twenty} down Bartholomew lane. As you approach your cousin ${twentyone}'s tavern, ya oversee a great feast in the great mansion of Baron ${twentytwo}. Ye play dress up as a ${twentythree} to camouflage in the big crowds entering the big ol' mansion. However, ya accidentally ${twentyfour} onto a child's itty bitty slipper. The child begins wailing loudly, and while you attempt to get the bothersome child to stop crying, ya feel a ${twentyfive} hand grip on ye shoulder. It was none other than the son of the Baron hostin' the party, Hon. ${twentysix}. He immediately had you ${twentyseven} out of the party, and eventually banished from ye town never to be heard of again.        
+        `;
 
       document.getElementById('story').innerText = story;
 
